@@ -1,0 +1,256 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #212121;
+    background-color: #eff4fd;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 84%;
+    margin: 0 auto;
+    padding: 0px 0; /* Adjust padding to reduce space */
+    background-color: transparent;
+    position: relative; /* Changed from fixed to relative */
+    z-index: 1000;
+}
+
+.logo {
+    width: 75px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #212121;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding-top: 0px; /* Adjust padding to ensure proper spacing */
+    text-align: center;
+    background-color: #eff4fd;
+}
+
+.detel h1 {
+    font-size: 3rem;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.detel h1 span {
+    color: #ff5722;
+}
+
+.detel p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.detel a {
+    background-color: #212121;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block; /* Ensure proper spacing with margin */
+    margin-top: 10px; /* Add margin-top for spacing */
+}
+
+.detel a:hover {
+    background-color: #444;
+    transform: translateY(-3px);
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #212121;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #ff5722;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.education-item,
+.experience-item,
+.project-item,
+.skills-item,
+.contact-item {
+    margin-bottom: 30px;
+}
+
+.education-item h3,
+.experience-item h3,
+.project-item h3,
+.skills-item h3 {
+    font-size: 1.8rem;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.education-item p,
+.experience-item p,
+.project-item p,
+.skills-item p,
+.contact-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #ff5722;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #e64a19;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .detel h1 {
+        font-size: 2.5rem;
+    }
+
+    .detel p {
+        font-size: 1.1rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .detel h1 {
+        font-size: 2.2rem;
+    }
+
+    .detel p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .detel h1 {
+        font-size: 1.8rem;
+    }
+
+    .detel p {
+        font-size: 0.9rem;
+    }
+
+    .detel a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    nav .logo {
+        width: 60px;
+    }
+}
