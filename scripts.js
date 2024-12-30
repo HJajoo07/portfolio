@@ -1,6 +1,6 @@
 // Configuration for the Embedded Chatbot
 window.embeddedChatbotConfig = {
-    chatbotId: "QDAxG5Gl2KwFas-uDJywL",
+    chatbotId: "SUQTZGVgpCfr_FcX3uhKF",
     domain: "www.chatbase.co",
 };
 
